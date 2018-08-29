@@ -18,7 +18,8 @@ injectGlobal`
     --notificationBlue: #CCE5F5;
     --notificationBorder: #B8DAFF;
     --notificationColor: #004085;
-    --primary: #6493f3;
+    --primary: #303875;
+    --primary1: #6493f3;
     --acceptGreen: #28A745;
     --rejectRed: #DC3545;
     --secondary: #b6ccfb;
@@ -70,6 +71,25 @@ injectGlobal`
     -webkit-transition: background-color .3s;
     transition: background-color .3s;
     border: solid 1px #666;
+  }
+
+  input[type='password'],
+  input[type='text'],
+  input[type='submit'] {
+    width: 100%;
+  }
+  input[type='text'],
+  input[type='password'],
+  input[type='submit'] {
+    border-radius: 0.25rem;
+    padding: 1rem;
+    color: #3a3f44;
+  }
+  input[type='text'],
+  input[type='password'] {
+    background-color: #ffffff;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
   }
 
 
