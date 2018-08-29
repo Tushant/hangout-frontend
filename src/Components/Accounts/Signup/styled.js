@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import BackgroundImage from './images/watermark-background.jpg';
 
 export const SignupForm = styled.div`
   width: 100%;
@@ -16,7 +17,10 @@ export const SignupForm = styled.div`
 
 export const SignupWrapper = styled.div`
   width: 100%;
-  background: #fff;
+  background: linear-gradient(rgba(48, 56, 117, 0.85), rgba(48, 56, 117, 0.85)), url(${BackgroundImage});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -28,13 +32,8 @@ export const SignupWrapper = styled.div`
   flex-direction: row-reverse;
 `;
 
-export const SideWrapper = styled.div`
+export const LeftBlock = styled.div`
   width: calc(100% - 560px);
-  background: var(--primary);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
   z-index: 1;
   &::before {
     content: '';
@@ -50,16 +49,29 @@ export const SideWrapper = styled.div`
 `;
 
 export const RightBlock = styled.div`
-  width: 560px;
+  width: 50%;
   min-height: 100vh;
   display: block;
   background-color: #f7f7f7;
-  padding: 50px 55px 55px 55px;
+  padding: 0;
+  position: relative;
 `;
 
 export const Form = styled.form`
   background: var(--white);
   box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 120px;
+  left: 0;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  z-index: 99;
+  right: 0;
+  margin: auto;
+  width: 75%;
 `;
 
 export const Caption = styled.span`

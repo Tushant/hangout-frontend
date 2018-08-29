@@ -26,7 +26,7 @@ injectGlobal`
     --grey: #686363;
     --white: #fff;
     --mildGrey: #444;
-    --lightGrey: #777;
+    --lightGrey: #9999994f;
     --lighterGrey: #ccc;
     --lightestGrey: #efefef;
     --success: #d4edda;
@@ -70,7 +70,7 @@ injectGlobal`
     padding: 0;
     -webkit-transition: background-color .3s;
     transition: background-color .3s;
-    border: solid 1px #666;
+    border: solid 1px var(--lightGrey);
   }
 
   input[type='password'],

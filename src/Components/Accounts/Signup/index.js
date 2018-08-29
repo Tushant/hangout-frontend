@@ -7,7 +7,6 @@ class Signup extends React.Component {
     return (
       <styled.SignupForm>
         <styled.SignupWrapper>
-          <styled.RightBlock>
             <styled.Form>
               <styled.Caption>Create An Account</styled.Caption>
 
@@ -38,9 +37,8 @@ class Signup extends React.Component {
                 <styled.StyledButton>Sign up</styled.StyledButton>
               </styled.FormField>
             </styled.Form>
-          </styled.RightBlock>
-
-          <styled.SideWrapper />
+          <styled.RightBlock />
+          <styled.LeftBlock />
         </styled.SignupWrapper>
       </styled.SignupForm>
     );
