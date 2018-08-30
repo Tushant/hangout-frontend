@@ -25,7 +25,7 @@ injectGlobal`
     --secondary: #b6ccfb;
     --grey: #686363;
     --white: #fff;
-    --mildGrey: #444;
+    --mildGrey: #555;
     --lightGrey: #9999994f;
     --lighterGrey: #ccc;
     --lightestGrey: #efefef;
@@ -103,4 +103,15 @@ injectGlobal`
     -webkit-box-shadow: 0 0 0px 1000px white inset;
     box-shadow: 0 0 0px 1000px white inset;
   }
+  
+  .full-grid {
+    flex-basis: 100%;
+    grid-column: 1 / -1;
+  }
+
+  .half-grid {
+    flex-basis: calc(100% / var(--column-count));
+    grid-column-end: span 1;
+  }
+
 `;

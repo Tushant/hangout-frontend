@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const LoginForm = styled.div`
   display: flex;
@@ -76,11 +77,11 @@ export const Footer = styled.div`
 `
 
 export const Text = styled.p`
-  color: var(--grey)
+  color: var(--grey);
 `
 
-export const Anchor = styled.a`
-  color: var(--primary)
+export const Anchor = styled(Link)`
+  color: var(--primary);
 `
 // .form-login input[type="text"]:focus, .form-login input[type="text"]:hover, .form-login input[type="password"]:focus, .form-login input[type="password"]:hover {
 //   background-color: #eeeeee;

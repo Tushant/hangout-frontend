@@ -11,7 +11,9 @@
   "dependencies": {
     "connected-react-router": "^4.4.1",
     "history": "^4.7.2",
+    "moment": "^2.22.2",
     "react": "^16.4.2",
+    "react-dates": "^17.2.0",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",

@@ -23,7 +23,7 @@ export const ProfileWrapper = styled.div`
 `;
 
 export const Caption = styled.div`
-  color: var(--lightGrey);
+  color: var(--mildGrey);
   margin-bottom: 20px;
   text-align: center;
   display: flex;
@@ -87,7 +87,7 @@ export const SloganTitle = styled.p`
 `;
 export const SloganText = styled.div`
   font-size: 14px;
-  color: var(--lightGrey);
+  color: var(--mildGrey);
 `;
 
 export const ProfilePersonal = styled.div`

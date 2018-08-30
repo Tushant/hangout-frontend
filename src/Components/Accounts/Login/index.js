@@ -26,7 +26,7 @@ class Login extends React.Component {
           </styled.LoginWrapper>
         </styled.Container>
         <styled.Footer>
-          <styled.Text>Don't have an hangout account? <styled.Anchor>Sign up!</styled.Anchor></styled.Text>
+          <styled.Text>Don't have an hangout account? <styled.Anchor to="/signup">Sign up!</styled.Anchor></styled.Text>
         </styled.Footer>
       </styled.LoginForm>
     );
