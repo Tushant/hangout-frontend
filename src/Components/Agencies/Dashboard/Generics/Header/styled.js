@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const DashboardHeader = styled.header`
   display: flex;
@@ -34,8 +35,9 @@ export const Toolbar = styled.div`
   padding: 0 var(--spacing);
 `;
 
-export const Button = styled.button`
+export const ButtonLink = styled(Link)`
   display: inline-block;
+  text-decoration: none;
   border-radius: 5em;
   border: 0;
   padding: 0.5rem 1rem;

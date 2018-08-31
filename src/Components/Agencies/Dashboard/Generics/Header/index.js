@@ -1,5 +1,5 @@
 import React from 'react';
-import { DashboardHeader, Logo, Toolbar, Button, LogoutText } from './styled';
+import { DashboardHeader, Logo, Toolbar, ButtonLink, LogoutText } from './styled';
 
 
 const Header = () => (
@@ -8,7 +8,7 @@ const Header = () => (
       <h1>Hikers Nepal</h1>
     </Logo>
     <Toolbar>
-      <Button>New Campaign</Button>
+      <ButtonLink to="/agency/new-campaign">New Campaign</ButtonLink>
       <LogoutText>
         Log Out
       </LogoutText>
